@@ -10,7 +10,6 @@ Cookiepatcher
     * - tests
       - | |travis| |appveyor| |requires|
         | |coveralls| |codecov|
-        | |landscape| |scrutinizer| |codacy| |codeclimate|
     * - package
       - |version| |downloads| |wheel| |supported-versions| |supported-implementations|
 
@@ -49,6 +48,7 @@ Cookiepatcher
 .. |codeclimate| image:: https://codeclimate.com/github/ionelmc/python-cookiepatcher/badges/gpa.svg
    :target: https://codeclimate.com/github/ionelmc/python-cookiepatcher
    :alt: CodeClimate Quality Status
+
 .. |version| image:: https://img.shields.io/pypi/v/cookiepatcher.svg?style=flat
     :alt: PyPI Package latest release
     :target: https://pypi.python.org/pypi/cookiepatcher
@@ -88,7 +88,28 @@ Installation
 Documentation
 =============
 
-https://python-cookiepatcher.readthedocs.org/
+Usage: ``cookiepatcher [OPTIONS] TEMPLATE TARGET``
+
+Args:
+
+.. list-table::
+    :stub-columns: 1
+
+    * - ``TARGET``
+      - Directory where to look for ``.cookiecutterrc``.
+    * - ``TEMPLATE``
+      - Name of cookiecutter template.
+
+
+Options:
+
+  -V, --version        Show the version and exit.
+  --no-input           Do not prompt for parameters and only use
+                       cookiecutter.json file content
+  -c, --checkout TEXT  branch, tag or commit to checkout after git clone
+  -v, --verbose        Print debug information
+  --help               Show this message and exit.
+
 
 Development
 ===========
