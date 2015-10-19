@@ -69,7 +69,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'cookiepatcher = cookiepatcher.__main__:main',
+            'cookiepatcher = cookiepatcher.cli:main',
         ]
     },
 )
