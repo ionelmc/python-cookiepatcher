@@ -26,7 +26,7 @@ def read(*names, **kwargs):
 
 setup(
     name='cookiepatcher',
-    version='0.1.0',
+    version='0.1.1',
     license='BSD',
     description='Just a small shim around cookiecutter that alters a bit the CLI to work better when reapplying templates to existing projects. Works best with cookiecutter-pylibrary.',
     long_description='%s\n%s' % (read('README.rst'), re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))),
