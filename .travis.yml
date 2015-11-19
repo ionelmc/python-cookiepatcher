@@ -7,21 +7,14 @@ env:
   matrix:
     - TOXENV=check
 
-    - TOXENV=2.6-cover,coveralls,codecov
-    - TOXENV=2.6-nocov
-
     - TOXENV=2.7-cover,coveralls,codecov
     - TOXENV=2.7-nocov
-
     - TOXENV=3.3-cover,coveralls,codecov
     - TOXENV=3.3-nocov
-
     - TOXENV=3.4-cover,coveralls,codecov
     - TOXENV=3.4-nocov
-
     - TOXENV=3.5-cover,coveralls,codecov
     - TOXENV=3.5-nocov
-
     - TOXENV=pypy-cover,coveralls,codecov
     - TOXENV=pypy-nocov
 
@@ -44,4 +37,3 @@ notifications:
   email:
     on_success: never
     on_failure: always
-
