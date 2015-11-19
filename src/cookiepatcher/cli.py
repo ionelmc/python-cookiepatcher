@@ -88,22 +88,16 @@ def main(template, target, no_input, checkout, verbose):
             extra_context = None
 
         with weave('cookiecutter.main.generate_files', save_context):
-            with weave('tempfile.NamedTemporaryFile', setdefault_utf8):
-                cookiecutter(
-                    template, checkout, no_input,
-                    overwrite_if_exists=True,
-                    output_dir=os.path.dirname(target),
-                    extra_context=extra_context,
-                )
+            cookiecutter(
+                template, checkout, no_input,
+                overwrite_if_exists=True,
+                output_dir=os.path.dirname(target),
+                extra_context=extra_context,
+            )
     except (OutputDirExistsException, InvalidModeException) as e:
         click.echo(e)
         sys.exit(1)
 
-
-@Aspect
-def setdefault_utf8(*args, **kwargs):
-    kwargs.setdefault('encoding', 'utf-8')
-    yield Proceed(*args, **kwargs)
 
 @Aspect
 def save_context(context, **kwargs):

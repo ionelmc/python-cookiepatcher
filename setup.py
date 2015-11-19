@@ -61,7 +61,7 @@ setup(
     ],
     install_requires=[
         'click',
-        'cookiecutter',
+        'cookiecutter>=1.3.0',
         'aspectlib',
     ],
     extras_require={

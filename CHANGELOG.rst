@@ -2,6 +2,11 @@
 Changelog
 =========
 
+0.2.0 (2015-11-19)
+------------------
+
+* Remove some workarounds. Requires ``cookiecutter>=1.3.0``.
+
 0.1.1 (2015-11-05)
 ------------------
 
