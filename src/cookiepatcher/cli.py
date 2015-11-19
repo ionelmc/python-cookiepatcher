@@ -19,7 +19,7 @@ import os
 import sys
 
 import click
-from aspectlib import Aspect, Proceed
+from aspectlib import Aspect
 from aspectlib import weave
 from cookiecutter.config import get_config
 from cookiecutter.exceptions import InvalidModeException
