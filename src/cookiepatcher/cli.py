@@ -89,15 +89,22 @@ def main(template, target, no_input, checkout, verbose):
             extra_context = None
 
         with weave('cookiecutter.main.generate_files', save_context):
-            cookiecutter(
-                template, checkout, no_input,
-                overwrite_if_exists=True,
-                output_dir=os.path.dirname(target),
-                extra_context=extra_context,
-            )
+            with weave('cookiecutter.generate.rmtree', complain):
+                cookiecutter(
+                    template, checkout, no_input,
+                    overwrite_if_exists=True,
+                    output_dir=os.path.dirname(target),
+                    extra_context=extra_context,
+                )
     except (OutputDirExistsException, InvalidModeException) as e:
         click.echo(e)
         sys.exit(1)
+
+
+def complain(func):
+    def moan_and_groan(*args, **kwargs):
+        raise Exception("Maybe deleting all your shit ain't a good idea ...")
+    return moan_and_groan
 
 
 @Aspect

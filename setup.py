@@ -61,8 +61,9 @@ setup(
     ],
     install_requires=[
         'click',
-        'cookiecutter>=1.3.0',
+        'cookiecutter>=1.5.1',
         'aspectlib',
+        'ruamel.yaml',
     ],
     extras_require={
         # eg:
