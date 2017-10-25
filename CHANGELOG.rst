@@ -2,6 +2,27 @@
 Changelog
 =========
 
+0.3.3 (2017-10-25)
+------------------
+
+* Fixed issues with god knows what changed again in cookiecutter.
+
+0.3.2 (2017-07-19)
+------------------
+
+* Fixed issues with linewrapping in ``.cookiecutterrc``.
+
+0.3.1 (2017-07-19)
+------------------
+
+* Fixed more breakage.
+
+
+0.3.0 (2015-11-28)
+------------------
+
+* Fix issues with Python 2.7.
+
 0.3.0 (2015-11-28)
 ------------------
 

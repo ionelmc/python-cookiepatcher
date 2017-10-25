@@ -22,6 +22,7 @@ import sys
 import click
 from aspectlib import Aspect
 from aspectlib import weave
+from cookiecutter.config import DEFAULT_CONFIG
 from cookiecutter.config import get_config
 from cookiecutter.exceptions import InvalidModeException
 from cookiecutter.exceptions import OutputDirExistsException
@@ -73,6 +74,7 @@ def main(template, target, no_input, checkout, verbose):
         )
 
     try:
+        DEFAULT_CONFIG.setdefault('cookiecutter', {})
         src = os.path.join(target, '.cookiecutterrc')
         if os.path.exists(src):
             logger.info("Loading config from %r", src)
