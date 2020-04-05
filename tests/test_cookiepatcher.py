@@ -14,6 +14,7 @@ Options:
   -V, --version        Show the version and exit.
   --no-input           Do not prompt for parameters and only use
                        cookiecutter.json file content
+
   -c, --checkout TEXT  branch, tag or commit to checkout after git clone
   -v, --verbose        Print debug information
   --help               Show this message and exit.

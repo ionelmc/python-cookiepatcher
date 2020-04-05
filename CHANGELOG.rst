@@ -2,6 +2,11 @@
 Changelog
 =========
 
+0.3.4 (2020-04-05)
+------------------
+
+* Fixed ``.cookiecutterrc`` being dumped with ``!!omap`` garbage.
+
 0.3.3 (2017-10-25)
 ------------------
 
