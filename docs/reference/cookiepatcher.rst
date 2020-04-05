@@ -1,5 +1,0 @@
-cookiepatcher
-=============
-
-.. automodule:: cookiepatcher
-    :members:
