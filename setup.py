@@ -27,7 +27,8 @@ setup(
     name='cookiepatcher',
     version='0.3.3',
     license='BSD-2-Clause',
-    description='Just a small shim around cookiecutter that alters a bit the CLI to work better when reapplying templates to existing projects. Works best with cookiecutter-pylibrary.',
+    description='Just a small shim around cookiecutter that alters a bit the CLI to work better when reapplying templates to existing'
+                ' projects. Works best with cookiecutter-pylibrary.',
     long_description='%s\n%s' % (
         re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
         re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))
