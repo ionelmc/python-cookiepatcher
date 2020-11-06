@@ -2,6 +2,14 @@
 Changelog
 =========
 
+0.4.0 (2020-11-06)
+------------------
+
+* Fixed the ``.cookiecutterrc`` save code so that:
+
+  * ``default_context`` is the root key (instead of ``cookiecutter``).
+  * underscore prefixed keys are stripped (they are cookiecutter internals).
+
 0.3.4 (2020-04-05)
 ------------------
 
@@ -36,7 +44,7 @@ Changelog
 0.2.0 (2015-11-19)
 ------------------
 
-* Remove some workarounds. Requires ``cookiecutter>=1.3.0``.
+* Removed some workarounds. Requires ``cookiecutter>=1.3.0``.
 
 0.1.1 (2015-11-05)
 ------------------
