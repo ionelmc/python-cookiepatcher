@@ -9,6 +9,7 @@ Changelog
 
   * ``default_context`` is the root key (instead of ``cookiecutter``).
   * underscore prefixed keys are stripped (they are cookiecutter internals).
+* Made `3.5` the minimum Python version.
 
 0.3.4 (2020-04-05)
 ------------------

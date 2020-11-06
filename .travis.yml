@@ -13,9 +13,6 @@ matrix:
       env:
         - TOXENV=check
     - env:
-        - TOXENV=py27
-      python: '2.7'
-    - env:
         - TOXENV=py35
       python: '3.5'
     - env:
@@ -31,11 +28,7 @@ matrix:
         - TOXENV=py39
       python: '3.9'
     - env:
-        - TOXENV=pypy
-      python: 'pypy'
-    - env:
         - TOXENV=pypy3
-        - TOXPYTHON=pypy3
       python: 'pypy3'
 before_install:
   - python --version
