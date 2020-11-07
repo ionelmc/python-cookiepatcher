@@ -42,9 +42,9 @@ Overview
     :alt: Supported implementations
     :target: https://pypi.org/project/cookiepatcher
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/ionelmc/python-cookiepatcher/v0.3.4.svg
+.. |commits-since| image:: https://img.shields.io/github/commits-since/ionelmc/python-cookiepatcher/v0.4.0.svg
     :alt: Commits since latest release
-    :target: https://github.com/ionelmc/python-cookiepatcher/compare/v0.3.4...master
+    :target: https://github.com/ionelmc/python-cookiepatcher/compare/v0.4.0...master
 
 
 
