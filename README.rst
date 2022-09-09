@@ -8,19 +8,15 @@ Overview
     :stub-columns: 1
 
     * - tests
-      - | |travis| |appveyor| |requires|
+      - | |github-actions| |requires|
         |
     * - package
       - | |version| |wheel| |supported-versions| |supported-implementations|
         | |commits-since|
 
-.. |travis| image:: https://api.travis-ci.org/ionelmc/python-cookiepatcher.svg?branch=master
-    :alt: Travis-CI Build Status
-    :target: https://travis-ci.org/ionelmc/python-cookiepatcher
-
-.. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/ionelmc/python-cookiepatcher?branch=master&svg=true
-    :alt: AppVeyor Build Status
-    :target: https://ci.appveyor.com/project/ionelmc/python-cookiepatcher
+.. |github-actions| image:: https://github.com/ionelmc/python-cookiepatcher/actions/workflows/github-actions.yml/badge.svg
+    :alt: GitHub Actions Build Status
+    :target: https://github.com/ionelmc/python-cookiepatcher/actions
 
 .. |requires| image:: https://requires.io/github/ionelmc/python-cookiepatcher/requirements.svg?branch=master
     :alt: Requirements Status
@@ -62,35 +58,43 @@ Installation
 
     pip install cookiepatcher
 
+You can also install the in-development version with::
+
+    pip install https://github.com/ionelmc/python-cookiepatcher/archive/master.zip
+
+
 Documentation
 =============
 
-Usage: ``cookiepatcher [OPTIONS] TEMPLATE TARGET``
 
-Args:
+To use the project:
 
-.. list-table::
-    :stub-columns: 1
+.. code-block:: python
 
-    * - ``TARGET``
-      - Directory where to look for ``.cookiecutterrc``.
-    * - ``TEMPLATE``
-      - Name of cookiecutter template.
-
-
-Options:
-
-  -V, --version        Show the version and exit.
-  --no-input           Do not prompt for parameters and only use
-                       cookiecutter.json file content
-  -c, --checkout TEXT  branch, tag or commit to checkout after git clone
-  -v, --verbose        Print debug information
-  --help               Show this message and exit.
+    import cookiepatcher
+    cookiepatcher.-()
 
 
 Development
 ===========
 
-To run the all tests run::
+To run all the tests run::
 
     tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
