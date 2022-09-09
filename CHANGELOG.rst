@@ -46,11 +46,6 @@ Changelog
 
 * Fix issues with Python 2.7.
 
-0.3.0 (2015-11-28)
-------------------
-
-* Fix issues with Python 2.7.
-
 0.2.0 (2015-11-19)
 ------------------
 
