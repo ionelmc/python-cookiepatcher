@@ -91,7 +91,9 @@ def main(template, target, no_input, checkout, verbose):
                 cookiecutter(
                     template, checkout, no_input,
                     overwrite_if_exists=True,
-                    output_dir=os.path.dirname(target),
+                    # os.path.dirname does not work with tab-completed (trailing /) paths.
+                    # (That's one of the reasons pathlib was created.)
+                    output_dir=os.path.abspath(os.path.join(target, os.pardir)),
                     extra_context=extra_context,
                 )
     except (OutputDirExistsException, InvalidModeException) as e:
