@@ -20,7 +20,7 @@ def read(*names, **kwargs):
 
 setup(
     name='cookiepatcher',
-    version='0.4.0',
+    version='0.5.0',
     license='BSD-2-Clause',
     description=(
         'Just a small shim around cookiecutter that alters a bit the CLI to work better when reapplying templates to existing'
